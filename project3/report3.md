@@ -1,7 +1,9 @@
 # NBA Data Analysis
 ### Bryce Mann
 
-Just this past season the NBA as a whole made more 3-point shots (~27,000) than were made during the first 11 **years** (~23,000) after the 3-point line was introduced; the game is evolving drastically and rapidly, mainly due to the rise of so-called 'advanced stats' (metrics computed from basic counting stats) and teams increasing tendency to use the help of these analytics to make decisions. The NBA keeps extensive amounts of data on each player, team, and game, so I use some of it to try and answer a question about how the game is changing and another about the reliability of current players. For all of the code used to generate these answers, see [this Jupyter notebook](https://github.com/brycemann8334/Project3_DataScience/blob/master/project3/NotebookFinal.md).
+The NBA has changed a lot in recent years; the rise of so-called 'advanced stats' (metrics computed from basic counting stats) and teams' increasing tendency to use the help of these analytics to make their decisions have been big reasons why. That is part of the reason why it is so fun to poke around the league's data: you never know when you'll be able to find something that might be useful to a real team or player.
+
+For all of my code, see [this Jupyter notebook](https://github.com/brycemann8334/Project3_DataScience/blob/master/project3/NotebookFinal.md).
 
 ## Acknowledgements
 [stats.nba.com](stats.nba.com) is the source of all of the data I used. I want to give credit and thanks to swar, who created the nba_api python library that allows me to easily access the data (found on his github, [here](https://github.com/swar/nba_api)).
