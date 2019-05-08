@@ -11,6 +11,7 @@ Just this past season the NBA as a whole made more 3-point shots (~27,000) than 
 To try and answer this question I looked at Offensive and Defensive efficiency. These are advanced metrics that started to be collected in the 1996 season and are a measure of how many points a team scores and gives up for every 100 possessions. In order to control for each season I computed the z-score of each efficiency value and kept them in terms of standard deviations. To start to answer this question, I produced plots like the one below.
 
 ![](plots/eff.png)
+
 *Notice that the y-axis is inverted; that's just an aesthetic decision so that teams with good offenses and good defenses are in the upper right quadrant.*
 
 I am interested in how these two metrics can predict a team's success (which I define as their rank in the league standings, where 1 is the best), so each dot on the plot has a size proportional to their final rank. Looking at the upper right hand quadrant, we see what we expect and that is teams with good offenses and defenses tend to be more successful.
@@ -18,6 +19,7 @@ I am interested in how these two metrics can predict a team's success (which I d
 Now I can try to answer my question by running multiple regression with the efficiencies as independent variables and teams final ranking as the dependent variable for each year. This gives me a coefficient pair for each season; I then divided the offensive coefficient by the defensive coefficient to get a ratio. Since all of the efficiencies were standardized this ratio tells us the relative importance of offense and defense in predicting the final standings. This allowed me to plot the time series below.
 
 ![](plots/eff_time.png)
+
 *All of the ratios are negative because offense and final rank are negatively correlated. Below the blue line means that year it was more important to have a good offensive, and vice versa.*
 
 
@@ -33,6 +35,7 @@ Looking at players' per game averages is the easiest way to get some information
 
 ![](plots/consistency.png)
 ![](plots/consistency2.png)
+
 *Because people like round numbers, 20 PTS/GM is normally thought of as the baseline for being an 'elite' scorer so I only looked at players who met this benchmark. The IQR plotted is for all of their games in the season.*
 
 ### Conclusion
